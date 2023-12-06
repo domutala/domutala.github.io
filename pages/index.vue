@@ -20,6 +20,28 @@
     </div>
 
     <v-spacer />
+
+    <v-btn
+      variant="text"
+      rounded="xl"
+      color="light"
+      icon
+    >
+      <i class="fi fi-brands-github"></i>
+    </v-btn>
+
+    <v-btn
+      variant="text"
+      rounded="xl"
+      color="light"
+      icon
+    >
+      <svg-icon
+        name="lang"
+        width="16"
+        height="16"
+      />
+    </v-btn>
   </header>
   <v-container>
     <div
@@ -54,8 +76,15 @@
         rounded="xl"
         color="light"
         size="large"
+        tag="href"
+        target="blank"
+        href="https://discord.gg/uTCHgBNdTg"
       >
         Discuter avec moi
+
+        <template #append>
+          <i class="fi fi-brands-discord"></i>
+        </template>
       </v-btn>
     </div>
   </v-container>
