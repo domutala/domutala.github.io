@@ -25,6 +25,20 @@
       variant="text"
       rounded="xl"
       color="light"
+    >
+      <svg-icon
+        name="blog"
+        width="18"
+        height="18"
+      />
+
+      <div class="ml-2">blog</div>
+    </v-btn>
+
+    <v-btn
+      variant="text"
+      rounded="xl"
+      color="light"
       size="small"
       tag="href"
       target="_blank"
