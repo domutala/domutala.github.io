@@ -25,15 +25,24 @@
       variant="text"
       rounded="xl"
       color="light"
+      size="small"
+      tag="href"
+      target="_blank"
+      href="https://github.com/domutala"
       icon
     >
-      <i class="fi fi-brands-github"></i>
+      <svg-icon
+        name="github"
+        width="18"
+        height="18"
+      />
     </v-btn>
 
     <v-btn
       variant="text"
       rounded="xl"
       color="light"
+      size="small"
       icon
     >
       <svg-icon
@@ -77,7 +86,7 @@
         color="light"
         size="large"
         tag="href"
-        target="blank"
+        target="_blank"
         href="https://discord.gg/uTCHgBNdTg"
       >
         Discuter avec moi
