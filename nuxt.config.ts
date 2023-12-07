@@ -6,7 +6,15 @@ export default defineNuxtConfig({
 
   modules: ["vuetify-nuxt-module", "@nuxtjs/svg-sprite", "@nuxtjs/i18n"],
 
-  css: ["~/styles/main.scss", "@flaticon/flaticon-uicons/css/all/all.css"],
+  css: [
+    "~/styles/main.scss",
+    // "prismjs/themes/prism-okaidia.css",
+    "@flaticon/flaticon-uicons/css/all/all.css",
+    "prismjs/plugins/line-numbers/prism-line-numbers.css",
+    "prismjs/plugins/line-highlight/prism-line-highlight.css",
+  ],
+
+  components: [{ path: "@/components", global: true, prefix: "ui" }],
 
   i18n: {
     defaultLocale: "en",
