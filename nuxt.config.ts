@@ -4,6 +4,8 @@ import i18nConfig from "./i18n.config";
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  devServer: { port: 48600 },
+
   modules: ["vuetify-nuxt-module", "@nuxtjs/svg-sprite", "@nuxtjs/i18n"],
 
   css: [

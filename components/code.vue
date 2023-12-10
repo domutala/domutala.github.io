@@ -5,6 +5,7 @@ import "prismjs/plugins/line-highlight/prism-line-highlight";
 
 defineProps({
   code: { type: Object as PropType<ICode>, required: true },
+  hideOptions: { type: Boolean, default: false },
   backgroundColor: { type: String, default: "bg-grey-darken-4" },
 });
 const codeElement = ref<HTMLElement>();
@@ -32,7 +33,10 @@ function copy() {
     class="ui-code-viewer position-relative"
     :class="backgroundColor"
   >
-    <div class="ui-code-viewer-options">
+    <div
+      v-if="!hideOptions"
+      class="ui-code-viewer-options"
+    >
       <v-btn
         variant="text"
         rounded="xl"
@@ -114,6 +118,7 @@ pre[class*="language-"]::selection,
 code[class*="language-"] ::selection,
 pre[class*="language-"] ::selection {
   background: #0a0a0a;
+  color: #fff;
 }
 
 :not(pre) > code[class*="language-"] {

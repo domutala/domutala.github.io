@@ -4,20 +4,20 @@ import colors from "vuetify/util/colors";
 
 export default {
   theme: {
-    defaultTheme: "dark",
+    defaultTheme: "light",
 
     themes: {
-      ligth: {
+      light: {
         dark: false,
         colors: {
-          primary: "#fe3282",
-          surface: "#f8f8f8",
+          primary: "#3936f5",
+          surface: "#e7e7e7",
         },
       },
       dark: {
         dark: true,
         colors: {
-          primary: "#fe3282",
+          primary: "#3936f5",
         },
       },
     },
@@ -25,7 +25,7 @@ export default {
 
   defaults: {
     VBtn: {
-      variant: "flat",
+      variant: "elevated",
       style: { "text-transform": "none" },
     },
     VTextField: {
