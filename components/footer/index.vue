@@ -80,16 +80,7 @@ const links = {
         <div
           style="width: 552px; max-width: 90%; margin: auto; margin-top: 15px"
         >
-          <v-text-field
-            rounded="pill"
-            :placeholder="t('newsletter.placeholder')"
-            variant="solo-filled"
-            type="email"
-          >
-            <template #append-inner>
-              <i class="fi fi-rr-envelope-open-text mr-3"></i>
-            </template>
-          </v-text-field>
+          <ui-newsletter-input />
         </div>
       </div>
     </v-container>
