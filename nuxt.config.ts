@@ -6,6 +6,23 @@ export default defineNuxtConfig({
 
   devServer: { port: 48600 },
 
+  ssr: false,
+
+  app: {
+    head: {
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "En tant que développeur Full Stack, UI/UX Designer et chef de projet, je possède une expertise approfondie dans la conception de solutions conviviales. Mon engagement envers des standards élevés assure la réalisation ponctuelle des projets, mettant en œuvre des expériences utilisateur optimales.",
+        },
+      ],
+
+      title: "@domutala - Mamadou DIA",
+    },
+  },
+
   modules: ["vuetify-nuxt-module", "@nuxtjs/svg-sprite", "@nuxtjs/i18n"],
 
   css: [
@@ -22,5 +39,9 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     locales: ["en", "wlf", "fr"],
     vueI18n: "./i18n.config.ts",
+  },
+
+  nitro: {
+    preset: "github-pages",
   },
 });

@@ -22,21 +22,43 @@ const links = {
   >
     <img
       class="footer--bg"
-      src="~/assets/images/bg-002.png"
+      src="~/assets/images/hero_02.png"
       alt=""
     />
-    <v-container>
+    <v-container class="mb-16">
       <div class="text-center mt-16">
-        <v-avatar
-          size="64"
-          color="primary"
+        <div
+          style="
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+            overflow: hidden;
+            background: rgb(var(--primary));
+            background: linear-gradient(
+              65deg,
+              rgba(var(--v-theme-secondary), 1) 0%,
+              rgba(var(--v-theme-primary), 1) 90%
+            );
+            margin: auto;
+          "
         >
           <v-img
-            src="~/assets/images/004.png"
-            alt="Mamadou DIA"
+            src="~/assets/images/domutala_004.png"
+            alt="@domutala - Mamadou DIA"
+            class="w-100 h-100"
           ></v-img>
-        </v-avatar>
-        <h2 class="text-h6 mt-2">@domutala</h2>
+        </div>
+        <div
+          class="px-3 bg-background mx-auto text-body-2 border border-primary border-md rounded-pill text-prumary font-weight-bold mt-2"
+          style="
+            border-color: rgb(var(--v-theme-primary));
+            padding-top: 2px;
+            padding-bottom: 2px;
+            width: max-content;
+          "
+        >
+          @domutala
+        </div>
 
         <div class="mt-3">
           <v-btn
@@ -73,7 +95,7 @@ const links = {
     </v-container>
 
     <div
-      class="d-flex align-center mt-16 mb-5"
+      class="d-flex align-center mt-auto mb-5"
       style="width: 90%; margin: auto; margin-top: 20px"
     >
       <div class="d-flex align-center ga-2">
@@ -81,7 +103,7 @@ const links = {
       </div>
 
       <v-spacer />
-      <v-btn
+      <!-- <v-btn
         rounded="xl"
         color="white"
         class="mr-5"
@@ -90,7 +112,7 @@ const links = {
         <template #append>
           <i class="fi fi-sr-comments"></i>
         </template>
-      </v-btn>
+      </v-btn> -->
 
       <div class="ml-auto">© {{ new Date().getFullYear() }}</div>
     </div>
@@ -99,6 +121,8 @@ const links = {
 
 <style lang="scss" scoped>
 .ui--footer {
+  min-height: 100vh;
+
   > * {
     position: relative;
   }
