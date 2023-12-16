@@ -13,7 +13,7 @@ jobs:
       - run: corepack enable
       - uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: "20"
       # Pick your own package manager and build script
       - run: npm install
       - run: npm run build --preset=github_pages
@@ -31,7 +31,7 @@ jobs:
       id-token: write # to verify the deployment originates from an appropriate source
     # Deploy to the github_pages environment
     environment:
-      name: github_pages
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     # Specify runner + deployment step
     runs-on: ubuntu-latest
