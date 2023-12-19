@@ -36,7 +36,7 @@ const handleError = () => clearError({ redirect: "/" });
             "
           >
             <v-img
-              src="~/assets/images/domutala_004.png"
+              src="~/assets/images/domutala_002.png"
               alt="@domutala - Mamadou DIA"
               class="w-100 h-100"
             ></v-img>
