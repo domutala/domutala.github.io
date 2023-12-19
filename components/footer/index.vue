@@ -130,16 +130,8 @@ const links = {
       </div>
 
       <v-spacer />
-      <!-- <v-btn
-        rounded="xl"
-        color="white"
-        class="mr-5"
-      >
-        En savoir plus
-        <template #append>
-          <i class="fi fi-sr-comments"></i>
-        </template>
-      </v-btn> -->
+
+      <ui-theme />
 
       <div class="ml-auto">© {{ new Date().getFullYear() }}</div>
     </div>
