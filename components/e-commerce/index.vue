@@ -36,24 +36,62 @@ function setTypeAvailable() {
   <div class="py-16">
     <v-container>
       <div class="text-center">
+        <svg-icon
+          name="e-commerce"
+          style="width: 56px; height: 56px"
+          class="text-primary"
+        />
+        <h2
+          style="max-width: 662px"
+          class="text-h4 text-sm-h4 font-weight-black mx-auto"
+        >
+          {{ t("title") }}
+        </h2>
         <p
           class="py-5 mx-auto"
-          style="max-width: 552px"
-        >
-          {{ t("text") }}
-        </p>
+          style="max-width: 662px"
+          v-html="Markdown(t('text'))"
+        ></p>
       </div>
 
       <div class="d-flex align-center justify-center ga-2">
         <v-btn
+          v-if="typeAvailables.filter((ta) => ta.code === 'pc').length"
           icon
-          @click="type = typeAvailable.code"
           variant="text"
-          v-for="typeAvailable in typeAvailables"
-          :key="typeAvailable.code"
-          :active="type === typeAvailable.code"
+          @click="type = 'pc'"
         >
-          <i :class="typeAvailable.icon"></i>
+          <svg-icon
+            name="pc"
+            style="width: 36px; height: 36px"
+            :class="{ 'text-primary': type === 'pc' }"
+          />
+        </v-btn>
+
+        <v-btn
+          v-if="typeAvailables.filter((ta) => ta.code === 'tablette').length"
+          icon
+          variant="text"
+          @click="type = 'tablette'"
+        >
+          <svg-icon
+            name="laptop"
+            style="width: 32px; height: 32px"
+            :class="{ 'text-primary': type === 'tablette' }"
+          />
+        </v-btn>
+
+        <v-btn
+          v-if="typeAvailables.filter((ta) => ta.code === 'mobile').length"
+          icon
+          variant="text"
+          @click="type = 'mobile'"
+        >
+          <svg-icon
+            name="smartphone"
+            style="width: 24px; height: 24px"
+            :class="{ 'text-primary': type === 'mobile' }"
+          />
         </v-btn>
       </div>
     </v-container>
@@ -95,7 +133,7 @@ function setTypeAvailable() {
 
           <div class="d-flex align-center ga-3 ml-auto">
             <v-badge
-              color="primary"
+              color="grey"
               dot
             >
               <i class="fi fi-sr-shopping-cart text-h5"></i>
@@ -122,7 +160,7 @@ function setTypeAvailable() {
       >
         <div
           style="width: 50%; height: 12px"
-          class="bg-grey-darken-3 rounded-pill"
+          class="bg-grey rounded-pill"
         ></div>
         <i class="fi fi-sr-settings-sliders ml-auto"></i>
       </div>
@@ -194,6 +232,9 @@ function setTypeAvailable() {
         color="success"
         size="large"
         class="mx-auto"
+        tag="a"
+        target="_blank"
+        href="https://calendly.com/domutala/analyse-gratuite-pour-votre-site-e-commerce"
       >
         {{ t("cta") }}
       </v-btn>

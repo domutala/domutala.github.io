@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Stacks from "~/utils/Stacks";
+const { t } = useI18n({ useScope: "local" });
 </script>
 
 <template>
@@ -17,14 +17,34 @@ import Stacks from "~/utils/Stacks";
         style="border-bottom-left-radius: 100px; overflow: hidden"
       >
         <section
-          class="homepage--section-one"
+          class="homepage--section-one d-flex align-center justify-center"
           style="min-height: 100vh"
         >
-          <v-container>
-            <div
-              class="text-center"
-              style="margin-top: 150px"
-            >
+          <v-container class="my-16">
+            <div class="text-center">
+              <div
+                style="
+                  width: 96px;
+                  height: 96px;
+                  border-radius: 100%;
+                  overflow: hidden;
+                  background: rgb(var(--primary));
+                  background: linear-gradient(
+                    65deg,
+                    rgba(var(--v-theme-secondary), 1) 0%,
+                    rgba(var(--v-theme-primary), 1) 90%
+                  );
+                  margin: auto;
+                  margin-bottom: 15px;
+                "
+              >
+                <v-img
+                  src="~/assets/images/domutala_004.png"
+                  alt="@domutala - Mamadou DIA"
+                  class="w-100 h-100"
+                ></v-img>
+              </div>
+
               <div
                 class="px-3 py-1 bg-background border mx-auto rounded-pill mb-5 text-body-2"
                 style="width: max-content"
@@ -33,35 +53,17 @@ import Stacks from "~/utils/Stacks";
                 <!-- <span class="text-primary font-weight-bold">@domutala</span> -->
               </div>
               <h1
-                class="text-h4 text-sm-h3 text-md-h2 font-weight-black text-center"
+                style="max-width: 662px"
+                class="mx-auto text-h4 font-weight-black text-center"
               >
-                Lorem ipsum dolor sit amet consectetur
-                <!-- <span
-                  style="
-                    font-family: Sans-serif;
-                    background-image: linear-gradient(
-                      45deg,
-                      rgb(var(--v-theme-primary)),
-                      rgb(var(--v-theme-on-background))
-                    );
-                    -webkit-background-clip: text;
-                    color: transparent;
-                  "
-                >
-                  instantly
-                </span>
-                <br />with Codespaces -->
+                {{ t("section-one.title") }}
               </h1>
 
               <p
-                class="py-5 mx-auto"
-                style="max-width: 552px"
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                atque voluptate iste, culpa non delectus, vero voluptas
-                asperiores tenetur autem totam doloremque? Animi odit eos dolore
-                rem, nam impedit. Hic.
-              </p>
+                class="mt-5 mx-auto"
+                style="max-width: 772px"
+                v-html="Markdown(t('section-one.text'))"
+              ></p>
 
               <v-btn
                 rounded="xl"
@@ -70,8 +72,9 @@ import Stacks from "~/utils/Stacks";
                 tag="href"
                 target="_blank"
                 href="https://discord.gg/uTCHgBNdTg"
+                class="mt-5"
               >
-                Discuter avec moi
+                {{ t("section-one.cta") }}
 
                 <template #append>
                   <i class="fi fi-brands-discord"></i>
@@ -80,8 +83,9 @@ import Stacks from "~/utils/Stacks";
             </div>
           </v-container>
         </section>
+        <ui-e-commerce />
 
-        <section class="homepage--section-two">
+        <!-- <section class="homepage--section-two">
           <img
             src="~/assets/images/domutala_002.png"
             alt=""
@@ -108,10 +112,8 @@ import Stacks from "~/utils/Stacks";
               </v-col>
             </v-row>
           </v-container>
-        </section>
+        </section> -->
       </div>
-
-      <!-- <ui-resonsive /> -->
     </div>
     <ui-footer />
   </v-app>
@@ -180,3 +182,5 @@ import Stacks from "~/utils/Stacks";
   // border-bottom-right-radius: 50%;
 }
 </style>
+
+<i18n lang="json" src="./index.lang.json"></i18n>

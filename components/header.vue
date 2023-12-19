@@ -80,6 +80,23 @@
       />
     </v-btn>
 
+    <v-btn
+      variant="text"
+      rounded="xl"
+      color="light"
+      size="small"
+      tag="href"
+      target="_blank"
+      href="https://www.malt.fr/profile/domutala"
+      icon
+    >
+      <svg-icon
+        name="malt"
+        width="20"
+        height="20"
+      />
+    </v-btn>
+
     <!-- <v-btn
       variant="text"
       rounded="xl"
