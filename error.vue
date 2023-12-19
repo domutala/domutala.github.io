@@ -8,13 +8,15 @@ const handleError = () => clearError({ redirect: "/" });
 <template>
   <v-app>
     <div
-      style="
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      "
+      class="error-page"
+      style=""
     >
+      <img
+        class="error-page-bg"
+        src="~/assets/images/hero.png"
+        alt=""
+      />
+
       <v-container class="my-16">
         <div class="text-center">
           <div
@@ -41,13 +43,13 @@ const handleError = () => clearError({ redirect: "/" });
           </div>
 
           <div
-            class="px-3 py-1 bg-background border mx-auto rounded-pill mb-5 text-body-2"
+            class="px-2 py-1 bg-background mx-auto text-body-2 border border-primary border-md rounded-pill text-prumary font-weight-bold mt-2 bg-background"
             style="width: max-content"
           >
             @domutala
           </div>
 
-          <h2 class="text-h1">{{ error.statusCode }}</h2>
+          <h2 class="text-h1 mt-3">{{ error.statusCode }}</h2>
 
           <v-btn
             rounded="xl"
@@ -67,5 +69,28 @@ const handleError = () => clearError({ redirect: "/" });
     </div>
   </v-app>
 </template>
+
+<style lang="scss" scoped>
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > * {
+    position: relative;
+  }
+
+  .error-page-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+}
+</style>
 
 <i18n lang="json" src="./error.lang.json"></i18n>
