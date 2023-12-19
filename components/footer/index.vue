@@ -139,9 +139,8 @@ const links = {
 
       <v-spacer />
 
-      <ui-theme />
-
-      <div class="ml-auto">© {{ new Date().getFullYear() }}</div>
+      <div>© {{ new Date().getFullYear() }}</div>
+      <ui-theme class="ml-5" />
     </div>
   </v-footer>
 </template>

@@ -56,8 +56,8 @@ function setThemeMode() {
 <template>
   <v-btn
     rounded="xl"
-    color="white"
-    class="mr-5"
+    color="black"
+    class="text-h6"
     @click="toggle"
     icon
     size="small"
