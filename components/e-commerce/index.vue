@@ -54,7 +54,10 @@ function setTypeAvailable() {
         ></p>
       </div>
 
-      <div class="d-flex align-center justify-center ga-2">
+      <div
+        v-if="typeAvailables.length > 1"
+        class="d-flex align-center justify-center ga-2"
+      >
         <v-btn
           v-if="typeAvailables.filter((ta) => ta.code === 'pc').length"
           icon
