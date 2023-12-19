@@ -12,80 +12,76 @@ const { t } = useI18n({ useScope: "local" });
         alt=""
       />
 
-      <div
-        class="border-b"
-        style="border-bottom-left-radius: 100px; overflow: hidden"
+      <section
+        class="homepage--section-one d-flex align-center justify-center"
+        style="min-height: 100vh"
       >
-        <section
-          class="homepage--section-one d-flex align-center justify-center"
-          style="min-height: 100vh"
-        >
-          <v-container class="my-16">
-            <div class="text-center">
-              <div
-                style="
-                  width: 96px;
-                  height: 96px;
-                  border-radius: 100%;
-                  overflow: hidden;
-                  background: rgb(var(--primary));
-                  background: linear-gradient(
-                    65deg,
-                    rgba(var(--v-theme-secondary), 1) 0%,
-                    rgba(var(--v-theme-primary), 1) 90%
-                  );
-                  margin: auto;
-                  margin-bottom: 15px;
-                "
-              >
-                <v-img
-                  src="~/assets/images/domutala_004.png"
-                  alt="@domutala - Mamadou DIA"
-                  class="w-100 h-100"
-                ></v-img>
-              </div>
-
-              <div
-                class="px-3 py-1 bg-background border mx-auto rounded-pill mb-5 text-body-2"
-                style="width: max-content"
-              >
-                Mamadou DIA
-                <!-- <span class="text-primary font-weight-bold">@domutala</span> -->
-              </div>
-              <h1
-                style="max-width: 662px"
-                class="mx-auto text-h4 font-weight-black text-center"
-              >
-                {{ t("section-one.title") }}
-              </h1>
-
-              <p
-                class="mt-5 mx-auto"
-                style="max-width: 772px"
-                v-html="Markdown(t('section-one.text'))"
-              ></p>
-
-              <v-btn
-                rounded="xl"
-                color="primary"
-                size="large"
-                tag="href"
-                target="_blank"
-                href="https://discord.gg/uTCHgBNdTg"
-                class="mt-5"
-              >
-                {{ t("section-one.cta") }}
-
-                <template #append>
-                  <i class="fi fi-brands-discord"></i>
-                </template>
-              </v-btn>
+        <v-container class="my-16">
+          <div class="text-center">
+            <div
+              style="
+                width: 96px;
+                height: 96px;
+                border-radius: 100%;
+                overflow: hidden;
+                background: rgb(var(--primary));
+                background: linear-gradient(
+                  65deg,
+                  rgba(var(--v-theme-secondary), 1) 0%,
+                  rgba(var(--v-theme-primary), 1) 90%
+                );
+                margin: auto;
+                margin-bottom: 15px;
+              "
+            >
+              <v-img
+                src="~/assets/images/domutala_004.png"
+                alt="@domutala - Mamadou DIA"
+                class="w-100 h-100"
+              ></v-img>
             </div>
-          </v-container>
-        </section>
-        <ui-e-commerce />
 
-        <!-- <section class="homepage--section-two">
+            <div
+              class="px-3 py-1 bg-background border mx-auto rounded-pill mb-5 text-body-2"
+              style="width: max-content"
+            >
+              Mamadou DIA
+              <!-- <span class="text-primary font-weight-bold">@domutala</span> -->
+            </div>
+            <h1
+              style="max-width: 662px"
+              class="mx-auto text-h5 text-sm-h4 font-weight-black text-center"
+            >
+              {{ t("section-one.title") }}
+            </h1>
+
+            <p
+              class="mt-5 mx-auto"
+              style="max-width: 772px"
+              v-html="Markdown(t('section-one.text'))"
+            ></p>
+
+            <v-btn
+              rounded="xl"
+              color="primary"
+              size="large"
+              tag="href"
+              target="_blank"
+              href="https://discord.gg/uTCHgBNdTg"
+              class="mt-5"
+            >
+              {{ t("section-one.cta") }}
+
+              <template #append>
+                <i class="fi fi-brands-discord"></i>
+              </template>
+            </v-btn>
+          </div>
+        </v-container>
+      </section>
+      <ui-e-commerce />
+
+      <!-- <section class="homepage--section-two">
           <img
             src="~/assets/images/domutala_002.png"
             alt=""
@@ -113,7 +109,8 @@ const { t } = useI18n({ useScope: "local" });
             </v-row>
           </v-container>
         </section> -->
-      </div>
+
+      <ui-trusted-me />
     </div>
     <ui-footer />
   </v-app>
