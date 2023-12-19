@@ -2,7 +2,15 @@
 const { t } = useI18n({ useScope: "local" });
 
 const links = {
-  // mail: { url: "https://github.com/domutala", icon: "fi fi-sr-envelope" },
+  mail: {
+    url: "mailto:ibntalla@gmail.com",
+    icon: {
+      tag: "i",
+      props: {
+        class: "fi fi-sr-envelope",
+      },
+    },
+  },
   github: {
     url: "https://github.com/domutala",
     icon: {
