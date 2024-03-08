@@ -1,8 +1,8 @@
 // vuetify.config.ts
 import type { ExternalVuetifyOptions } from "vuetify-nuxt-module";
 
-const primaryColor = "#ff8617";
-const secondaryColor = "#fbbf24";
+const primaryColor = "#1764ff";
+const secondaryColor = "#1764ff";
 
 export default {
   theme: {
@@ -15,6 +15,7 @@ export default {
           primary: primaryColor,
           secondary: secondaryColor,
           surface: "#e7e7e7",
+          dark: "#000",
         },
       },
       dark: {
@@ -22,6 +23,7 @@ export default {
         colors: {
           primary: primaryColor,
           secondary: secondaryColor,
+          dark: "#fff",
         },
       },
     },

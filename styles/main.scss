@@ -5,3 +5,8 @@ svg {
 i {
   display: flex;
 }
+
+html,
+body {
+  overflow: auto;
+}
