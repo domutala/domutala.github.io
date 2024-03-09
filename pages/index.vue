@@ -66,12 +66,11 @@
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
-        display: flex;
-        align-items: center;
-        gap: 5px;
+        text-align: center;
+        line-height: 1;
       "
     >
-      <svg-icon name="helmet" width="20" height="20" />
+      <svg-icon name="helmet" width="25" height="25" class="mb-2" /><br />
       Website under maintenance
     </div>
   </v-app>
