@@ -24,6 +24,4 @@ export default defineNuxtConfig({
   css: ["~/styles/main.scss", "@flaticon/flaticon-uicons/css/all/all.css"],
 
   components: [{ path: "@/components", global: true, prefix: "ui" }],
-
-  nitro: { preset: "github-pages" },
 });
