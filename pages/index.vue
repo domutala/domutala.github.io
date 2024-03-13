@@ -1,5 +1,7 @@
 <template>
   <v-app>
+    <Ui-matrix style="height: calc(100lvh - 120px)" />
+
     <div
       style="
         position: fixed;
@@ -60,17 +62,25 @@
     </div>
 
     <div
+      class="border-t"
       style="
         opacity: 0.5;
         position: fixed;
-        bottom: 50px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
         line-height: 1;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width: 100%;
       "
     >
-      <svg-icon name="helmet" width="25" height="25" class="mb-2" /><br />
+      <svg-icon name="helmet" width="25" height="25" class="mb-2" />
       Website under maintenance
     </div>
   </v-app>

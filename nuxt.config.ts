@@ -23,5 +23,5 @@ export default defineNuxtConfig({
 
   css: ["~/styles/main.scss", "@flaticon/flaticon-uicons/css/all/all.css"],
 
-  components: [{ path: "@/components", global: true, prefix: "ui" }],
+  components: [{ path: "@/components/ui", global: true, prefix: "ui" }],
 });
