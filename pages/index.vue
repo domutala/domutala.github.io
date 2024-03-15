@@ -100,49 +100,34 @@
     </div> -->
 
     <div
-      class="bg-background"
+      class="bg-background d-flex align-center justify-center ga-5"
       style="
-        position: fixed;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        line-height: 1;
         height: 120px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width: 100%;
+        position: relative;
       "
     >
-      <!-- <svg-icon name="helmet" width="25" height="25" class="mb-2" />
-      Website under maintenance -->
-
-      <div class="d-flex align-center justify-center ga-5">
-        <a
-          href="https://github.com/domutala"
-          style="text-decoration: none; color: inherit; font-size: 24px"
-          target="_blank"
-        >
-          <i class="fi fi-brands-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/domutala/"
-          style="text-decoration: none; color: inherit"
-          target="_blank"
-        >
-          <i class="fi fi-brands-linkedin" style="font-size: 24px"></i>
-        </a>
-        <a
-          href="https://wa.me/+212643673564"
-          style="text-decoration: none; color: inherit"
-          target="_blank"
-        >
-          <i class="fi fi-brands-whatsapp" style="font-size: 24px"></i>
-        </a>
-      </div>
+      <a
+        href="https://github.com/domutala"
+        style="text-decoration: none; color: inherit; font-size: 24px"
+        target="_blank"
+      >
+        <i class="fi fi-brands-github"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/domutala/"
+        style="text-decoration: none; color: inherit"
+        target="_blank"
+      >
+        <i class="fi fi-brands-linkedin" style="font-size: 24px"></i>
+      </a>
+      <a
+        href="https://wa.me/+212643673564"
+        style="text-decoration: none; color: inherit"
+        target="_blank"
+      >
+        <i class="fi fi-brands-whatsapp" style="font-size: 24px"></i>
+      </a>
     </div>
   </v-app>
 </template>
