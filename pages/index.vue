@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Ui-matrix style="height: calc(100lvh - 120px)" />
+    <Ui-matrix-2 style="height: calc(100lvh - 120px)" />
 
     <div
       style="

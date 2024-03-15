@@ -29,8 +29,8 @@ function matrix() {
   const letters = painLetters.split("");
 
   // Setting up the columns
-  var fontSize = 10,
-    columns = canvas.value.width / fontSize;
+  const fontSize = 8;
+  const columns = canvas.value.width / fontSize;
 
   // Setting up the drops
   const drops: any[] = [];
@@ -78,6 +78,7 @@ function matrix() {
   canvas {
     width: 100%;
     height: 100%;
+    font-size: 29px;
   }
 }
 </style>
