@@ -1,8 +1,38 @@
 <template>
   <v-app>
-    <Ui-matrix style="height: calc(100lvh - 120px)" />
+    <div class="homepage-title">
+      <Ui-matrix
+        style="height: 100%; width: 100%; position: absolute; top: 0; left: 0"
+      />
 
-    <div
+      <div
+        style="
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 100%;
+        "
+      >
+        <v-container>
+          <div style="line-height: 1; font-size: 42px" class="roboto-bold">
+            Mamadou DIA
+          </div>
+          <div
+            style="line-height: 1; display: flex; align-items: center; gap: 6px"
+          >
+            <svg-icon
+              name="verifiyed"
+              width="20"
+              height="20"
+              class="text-success"
+            />
+            <b>Senior Software Engineer</b>
+          </div>
+        </v-container>
+      </div>
+    </div>
+
+    <!-- <div
       style="
         position: fixed;
         top: 50%;
@@ -38,7 +68,6 @@
           target="_blank"
         >
           <i class="fi fi-brands-linkedin" style="font-size: 24px"></i>
-          <!-- <svg-icon name="linkedin" width="28" height="28" /> -->
         </a>
       </div>
       <div
@@ -59,12 +88,11 @@
         />
         <b>Senior Software Engineer</b>
       </div>
-    </div>
+    </div> -->
 
     <div
-      class="border-t"
+      class="bg-background"
       style="
-        opacity: 0.5;
         position: fixed;
         bottom: 0;
         left: 50%;
@@ -80,8 +108,39 @@
         width: 100%;
       "
     >
-      <svg-icon name="helmet" width="25" height="25" class="mb-2" />
-      Website under maintenance
+      <!-- <svg-icon name="helmet" width="25" height="25" class="mb-2" />
+      Website under maintenance -->
+
+      <div class="d-flex align-center justify-center ga-5">
+        <a
+          href="https://github.com/domutala"
+          style="text-decoration: none; color: inherit; font-size: 24px"
+          target="_blank"
+        >
+          <i class="fi fi-brands-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/domutala/"
+          style="text-decoration: none; color: inherit"
+          target="_blank"
+        >
+          <i class="fi fi-brands-linkedin" style="font-size: 24px"></i>
+        </a>
+        <a
+          href="https://wa.me/+212643673564"
+          style="text-decoration: none; color: inherit"
+          target="_blank"
+        >
+          <i class="fi fi-brands-whatsapp" style="font-size: 24px"></i>
+        </a>
+      </div>
     </div>
   </v-app>
 </template>
+
+<style lang="scss" scoped>
+.homepage-title {
+  height: calc(100lvh - 120px);
+  position: relative;
+}
+</style>
