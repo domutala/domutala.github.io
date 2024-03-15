@@ -14,20 +14,29 @@
         "
       >
         <v-container>
-          <div style="line-height: 1; font-size: 42px" class="roboto-bold">
-            Mamadou DIA
-          </div>
-          <div
-            style="line-height: 1; display: flex; align-items: center; gap: 6px"
-          >
-            <svg-icon
-              name="verifiyed"
-              width="20"
-              height="20"
-              class="text-success"
-            />
-            <b>Senior Software Engineer</b>
-          </div>
+          <v-row justify="center">
+            <v-col cols="10">
+              <div style="line-height: 1; font-size: 42px" class="roboto-bold">
+                Mamadou DIA
+              </div>
+              <div
+                style="
+                  line-height: 1;
+                  display: flex;
+                  align-items: center;
+                  gap: 6px;
+                "
+              >
+                <svg-icon
+                  name="verifiyed"
+                  width="20"
+                  height="20"
+                  class="text-success"
+                />
+                <b>Senior Software Engineer</b>
+              </div>
+            </v-col>
+          </v-row>
         </v-container>
       </div>
     </div>
