@@ -3,7 +3,7 @@ const index = ref(Math.random());
 const canvas = ref<HTMLCanvasElement | null>(null);
 
 onMounted(() => {
-  addEventListener("resize", startMatrix);
+  // addEventListener("resize", startMatrix);
   setTimeout(startMatrix, 100);
 });
 
