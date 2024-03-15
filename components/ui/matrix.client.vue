@@ -71,7 +71,7 @@ function matrix() {
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .ui-matrix {
   overflow: hidden;
 
