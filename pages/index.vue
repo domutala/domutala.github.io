@@ -42,7 +42,7 @@
     </div>
 
     <div
-      class="bg-background d-flex align-center justify-center ga-5"
+      class="bg-background d-flex align-center justify-center flex-column ga-2"
       style="
         height: 120px;
         width: 100%;
@@ -51,27 +51,30 @@
         bottom: 0;
       "
     >
-      <a
-        href="https://github.com/domutala"
-        style="text-decoration: none; color: inherit; font-size: 24px"
-        target="_blank"
-      >
-        <i class="fi fi-brands-github"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/domutala/"
-        style="text-decoration: none; color: inherit"
-        target="_blank"
-      >
-        <i class="fi fi-brands-linkedin" style="font-size: 24px"></i>
-      </a>
-      <a
-        href="https://wa.me/+212643673564"
-        style="text-decoration: none; color: inherit"
-        target="_blank"
-      >
-        <i class="fi fi-brands-whatsapp" style="font-size: 24px"></i>
-      </a>
+      <div class="d-flex align-center justify-center ga-5">
+        <a
+          href="https://github.com/domutala"
+          style="text-decoration: none; color: inherit; font-size: 24px"
+          target="_blank"
+        >
+          <i class="fi fi-brands-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/domutala/"
+          style="text-decoration: none; color: inherit"
+          target="_blank"
+        >
+          <i class="fi fi-brands-linkedin" style="font-size: 24px"></i>
+        </a>
+        <a
+          href="https://wa.me/+212643673564"
+          style="text-decoration: none; color: inherit"
+          target="_blank"
+        >
+          <i class="fi fi-brands-whatsapp" style="font-size: 24px"></i>
+        </a>
+      </div>
+      <div class="text-body-2">@<b>domutala</b></div>
     </div>
   </v-app>
 </template>
