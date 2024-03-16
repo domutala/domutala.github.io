@@ -76,6 +76,10 @@
       </div>
       <div class="text-body-2">@<b>domutala</b></div>
     </div>
+
+    <div style="position: absolute; top: 20px; right: 20px">
+      <svg-icon name="logo" width="32" height="32" />
+    </div>
   </v-app>
 </template>
 

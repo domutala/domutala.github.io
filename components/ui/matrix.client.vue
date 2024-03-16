@@ -38,19 +38,19 @@ function matrix() {
     drops[i] = 1;
   }
 
-  const style = window.getComputedStyle(document.body);
-  const themeBackground = style.getPropertyValue("--v-theme-background");
-  const themeOnBackground = style.getPropertyValue("--v-theme-on-background");
-
   // Setting up the draw function
   function draw() {
     if (!canvas.value) return;
+
+    const style = window.getComputedStyle(canvas.value);
+    const themeBackground = style.getPropertyValue("--v-theme-background");
+    const themeOnBackground = style.getPropertyValue("--v-theme-on-background");
 
     ctx.fillStyle = `rgba(${themeBackground}, .1)`;
     ctx.fillRect(0, 0, canvas.value.width, canvas.value.height);
     for (var i = 0; i < drops.length; i++) {
       var text = letters[Math.floor(Math.random() * letters.length)];
-      ctx.fillStyle = `rgba(${themeOnBackground}, .2)`; // "rgba(0, 0, 0, .2)";
+      ctx.fillStyle = `rgba(${themeOnBackground}, .2)`;
       ctx.fillText(text, i * fontSize, drops[i] * fontSize);
       drops[i]++;
       if (drops[i] * fontSize > canvas.value.height && Math.random() > 0.95) {
