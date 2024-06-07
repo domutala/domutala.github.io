@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "deploy": "yarn build && gh-pages -d dist",
-    "start:prod": "node .output/server/index.mjs"
+    "start:prod": "npx serve .output/public"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
