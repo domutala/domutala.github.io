@@ -19,8 +19,4 @@ jobs:
             cd ${{ secrets.PROJECT_FOLDER}}
             sudo git pull
 
-            cd ${{ secrets.PROJECT_FOLDER}}
-            sudo yarn
-            sudo yarn build
-
-            sudo systemctl restart ${{ secrets.PROJECT_SERVICE }}
+            sudo systemctl restart domutala.service
