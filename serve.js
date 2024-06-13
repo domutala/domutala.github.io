@@ -10,6 +10,6 @@ const server = http.createServer((request, response) => {
   return handler(request, response, { public: "./.output/public" });
 });
 
-server.listen(process.env.PORT, () => {
-  console.log(`Running at http://localhost:${process.env.PORT}`);
+server.listen(process.env.SERVE_PORT, () => {
+  console.log(`Running at http://localhost:${process.env.SERVE_PORT}`);
 });
