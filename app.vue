@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import useAppStore from "~/store/app";
+import cPlayer from "~/components/player.vue";
 
 const appStore = useAppStore();
 const { $vuetify } = useNuxtApp();
@@ -24,4 +25,5 @@ watch(
 
 <template>
   <nuxt-page />
+  <c-player />
 </template>
