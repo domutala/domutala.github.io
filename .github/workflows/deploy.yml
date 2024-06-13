@@ -18,6 +18,11 @@ jobs:
           script: |
             cd ${{ secrets.FOLDER}}
             sudo git pull
+
+            ENV_FILE_CONTENT="${{ secrets.ENV_FILE }}"
+            sudo rm -f .env
+            echo "$ENV_FILE_CONTENT" > .env
+            
             sudo yarn
             sudo yarn generate
 
