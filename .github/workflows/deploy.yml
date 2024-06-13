@@ -16,7 +16,8 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ${{ secrets.PROJECT_FOLDER}}
+            cd ${{ secrets.FOLDER}}
             sudo git pull
+            sudo yarn
 
-            sudo systemctl restart domutala.service
+            # sudo systemctl restart domutala.service
