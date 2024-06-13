@@ -26,4 +26,4 @@ jobs:
             sudo yarn
             sudo yarn generate
 
-            # sudo systemctl restart domutala.service
+            sudo systemctl restart domutala.service
