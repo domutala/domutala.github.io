@@ -24,6 +24,7 @@
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.0.0",
     "@nuxtjs/svg-sprite": "^1.0.2",
-    "@pinia/nuxt": "^0.5.1"
+    "@pinia/nuxt": "^0.5.1",
+     "serve-handler": "^6.1.5"
   }
 }
