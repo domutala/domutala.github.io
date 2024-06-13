@@ -19,5 +19,6 @@ jobs:
             cd ${{ secrets.FOLDER}}
             sudo git pull
             sudo yarn
+            sudo yarn generate
 
             # sudo systemctl restart domutala.service
