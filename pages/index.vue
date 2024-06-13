@@ -1,5 +1,9 @@
+<script lang="ts" setup>
+import cMode from "~/components/mode.vue";
+</script>
+
 <template>
-  <v-app theme="dark">
+  <v-app>
     <div class="homepage-background">
       <img src="~/assets/sprite/svg/background.svg" alt="" />
     </div>
@@ -56,6 +60,7 @@
         </v-container>
       </div>
     </div>
+    <c-mode style="position: absolute; bottom: 50px; right: 50px" />
   </v-app>
 </template>
 
@@ -73,6 +78,7 @@
   height: 100lvh;
   z-index: 0;
   user-select: none;
+  pointer-events: none;
   overflow: hidden;
 
   img {

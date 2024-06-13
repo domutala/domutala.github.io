@@ -19,7 +19,12 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["vuetify-nuxt-module", "@nuxtjs/svg-sprite"],
+  modules: [
+    "vuetify-nuxt-module",
+    "@nuxtjs/svg-sprite",
+    "@pinia/nuxt",
+    "@pinia-plugin-persistedstate/nuxt",
+  ],
 
   css: ["~/styles/main.scss", "@flaticon/flaticon-uicons/css/all/all.css"],
 
