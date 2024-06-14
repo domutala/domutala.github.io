@@ -25,11 +25,10 @@ function swticher() {
       Your browser does not support the audio element.
     </audio>
     <img
-      src="https://i.pinimg.com/originals/8f/92/df/8f92df73b0514885bbeec715cf2397e4.jpg"
+      src="~/assets/pictures/player-000.jpg"
       cover
       style="width: 100%; height: 100%; object-fit: cover"
     />
-    <!-- src="https://i.pinimg.com/originals/72/bc/3b/72bc3bfb4f72f2cae4c4ad908702c5aa.jpg" -->
   </div>
 </template>
 
